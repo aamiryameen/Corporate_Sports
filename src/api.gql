@@ -1,0 +1,6 @@
+{
+  missions {
+    id
+    name
+  }
+}

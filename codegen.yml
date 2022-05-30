@@ -1,0 +1,12 @@
+overwrite: true
+watch: true
+schema: "https://api.spacex.land/graphql/"
+documents: "src/**/*.gql"
+generates:
+  src/generated/graphql.tsx:
+      plugins:
+      - typescript
+      - typescript-operations
+      - typescript-rtk-query:
+          importBaseApiFrom: "../config/BaseApi"
+          exportHooks: true
